@@ -6,7 +6,7 @@
     font-family: 'Roboto', sans-serif;
     scroll-behavior: smooth;
 }
-nav{
+.nav-corona{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -14,17 +14,17 @@ nav{
     background: #A1A1FD;
     height: 50px;
 }
-nav ul{
+.nav-corona ul{
     display: flex;
     list-style: none;
     text-decoration: none;
     color: white;
     margin-right: 40px;
 }
-nav h1{
+.nav-corona h1{
     margin-left: 30px;
 }
-nav ul li a{
+.nav-corona ul li a{
     text-decoration: none;
     color: white; 
     margin: 0 10px; 

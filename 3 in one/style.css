@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+}
+
+.navigation-main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #F3F3F3;
+    height: 50px;
+    padding: 0 50px;
+}
+
+.navigation-main ul{
+    display: flex;
+    list-style: none;
+}
+
+.navigation-main li{
+    padding:  10px;
+    /* border: 1px solid; */
+    /* height: 100%; */
+}
+.navigation-main li:hover{
+    background: lightskyblue;
+    color: #F3F3F3;
+}
+
+
+
+/* corona css */
+
+.nav-corona{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    background: #A1A1FD;
+    height: 50px;
+}
+.nav-corona ul{
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+    color: white;
+    margin-right: 40px;
+}
+.nav-corona h1{
+    margin-left: 30px;
+}
+.nav-corona ul li a{
+    text-decoration: none;
+    color: white; 
+    margin: 0 10px; 
+}
+.main{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.main h1{
+    line-height: 35px;
+}
+.vector{
+    width: 30%;
+}
+.update{
+    text-align: center;
+    width: 100%;
+}
+.update h1{
+    color: rgba(235, 78, 78, 0.877);
+}
+.box{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    justify-content: space-evenly;
+    margin-top: 40px;
+    height: 150px;
+}
+#recoverd{
+    color: green;
+}
+#deaths{
+    color: red;
+}
+#symptoms{
+    text-align: center;
+}
+.symptoms-img{
+    width: 70%;
+    margin: auto;
+}
+#prevntation{
+    text-align: center;
+}
+.preventation-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 90%;
+    justify-content: space-evenly;
+    margin: 60px auto;
+}
+.preventation-info{
+    display: flex;
+    align-items: center;
+    margin: 30px auto;
+    width: 300px;
+}
+.preventation-info img{
+    width: 70px;
+}
+
+
+/* wheather css */
+#wheather{
+    display: none;
+}
+.header{
+    background-image: url(../assets/bg.jpg);
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    z-index: 1;
+}
+.input{
+    background: rgba(255, 255, 255, 0.288);
+    border-bottom-left-radius: 15px;
+    border-top-right-radius: 10px;
+    border: 2px solid rgba(0, 0, 0, 0.397);
+    font-size: 30px;
+    width: 300px;
+    margin-bottom: 30px;
+}
+.temperature{
+    margin-top: 40px;
+    font-size: 60px;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.712);
+}
+.condition{
+    margin-top: 10px;
+    font-size: 30px;
+    font-style: italic;
+}
+.range{
+    margin-top: 10px;
+    font-size: 25px;
+    font-style: italic;
+}
+
+/* news css */
+#news-section{
+    display: none;
+}
+/* .news{
+    display: flex;
+    height: 200px;
+    width: 82%;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    box-shadow: 3px 3px 10px 6px rgba(128, 128, 128, 0.363);
+} */
+.nav-news{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    color: white;
+    font-size: 27px;
+    font-weight: 700;
+    background: #5271FF;
+    height: 50px;
+    text-align: center;
+
+}
+.main-news{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 50px;
+    text-align: center;
+}
+.main-news h1{
+    margin-top: 50px;
+}
+.news-img{
+    width: 150px;
+    margin: auto;
+}
+#description{
+    height: 80px;
+    width: 100%;
+    overflow: auto;
+    /* overflow: ; */
+}
+.news{
+    display: flex;
+    /* flex-direction: column; */
+    height: 200px;
+    width: 82%;
+    margin: auto;
+    margin-top: 30px;
+    /* margin-bottom: 50px; */
+    box-shadow: 3px 3px 10px 6px rgba(128, 128, 128, 0.363);
+}
+#news-img{
+    height: 180px;
+    width: 180px;
+    object-fit: cover;
+    margin: auto;
+    margin-left: 5px;
+}
+.news-info{
+  
+    padding: 10px;
+}
+.news-content{
+    width: 600px;
+    margin-bottom: 5px;
+}
+#btn{
+    font-size: 13px;
+    text-decoration: none;
+    color: black;
+    background: gray;
+    padding: 3px 5px;
+}
+
+#btn{
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    padding: 3 5px;
+    margin-top: 7px;
+    background: #5271FF;
+    border-radius: 5px;
+    color: white;
+}
+.news-info{
+  width: 100%;
+    position: relative;
+}

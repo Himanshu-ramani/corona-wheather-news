@@ -1,7 +1,7 @@
 // const titel
 
 
-function news(){
+function newsCall(){
     fetch(
       `https://newsapi.org/v2/top-headlines?country=in&category=technology&apiKey=fc892eaa17a142a799c50694a36b5499`
     )
@@ -24,10 +24,10 @@ function news(){
         </div>
 
     </div>`)
-    document.getElementById("root").insertAdjacentHTML("beforeend",html)
+    document.getElementById("news-container").insertAdjacentHTML("beforeend",html)
       });
   }
-  news()
+  newsCall()
   
 
           // document.getElementById("news-img").src = gdata.articles[art].urlToImage

@@ -11,7 +11,7 @@
     width: 100%;
     z-index: 0;
 } */
-header{
+.header{
     background-image: url(../assets/bg.jpg);
     height: 100vh;
     text-align: center;
