@@ -9,22 +9,28 @@ function newsCall(){
         return newsdata.json();
       })
       .then((data) => {
+        let html;
         console.log(data);
-        html = data.articles.map(news=>` <div class="news">
-        <img id="news-img" src=${news.urlToImage === null ?`../assets/loading.jpg` : news.urlToImage } alt="">
-        <div class="news-info">
-            <h3 id="title">${news.title}</h3>
-            <h4 id="author">${news.author === null ? " ~Public" : news.author}</h4>
-            <p class="news-content" id="description">${news.description === null ? `...` : news.description}</p>
-            
-            <div class="btn-container">
-                <a href=${news.url} id="btn">Read More</a>
-                <br>
-            </div>
-        </div>
-
-    </div>`)
-    document.getElementById("news-container").insertAdjacentHTML("beforeend",html)
+        if (data.status !== "ok") {
+          html = `<h1 class="error">${data.message}</h1>`
+        } else {
+          html = data.articles.map(news=>` <div class="news">
+          <img id="news-img" src=${news.urlToImage === null ?`../assets/loading.jpg` : news.urlToImage } alt="">
+          <div class="news-info">
+              <h3 id="title">${news.title}</h3>
+              <h4 id="author">${news.author === null ? " ~Public" : news.author}</h4>
+              <p class="news-content" id="description">${news.description === null ? `...` : news.description}</p>
+              
+              <div class="btn-container">
+                  <a href=${news.url} id="btn">Read More</a>
+                  <br>
+              </div>
+          </div>
+  
+      </div>`)
+          
+        }
+    document.getElementById("root").insertAdjacentHTML("beforeend",html)
       });
   }
   newsCall()

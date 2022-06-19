@@ -1,38 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="news.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="news.css" />
     <title>Document</title>
-</head>
+  </head>
 
-<body>
+  <body>
+    <nav class="navigation-main">
+      <h1>PERSONALIZED WEBSITE</h1>
+      <ul>
+        <li><a href="../index.html"> COVID-19 </a></li>
+        <li><a href="../wheather/wheather.html"> WHEATHER </a></li>
+        <li>NEWS</li>
+      </ul>
+    </nav>
     <section class="news-section" id="news-section">
-        <nav class="nav-news">News </nav>
-        <main class="main-news"><img src="../assets/news.png" alt="" class="news-img">
-            <h1>Top news</h1>
-        </main>
-        <div id="root">
-            <div class="news-container" id="news-container">
-                <div class="news">
-                    <img id="news-img" src="../assets/loading.jpg" alt="">
-                    <div class="news-info">
-                        <h3 id="title">Title...</h3>
-                        <h4 id="author">~Author</h4>
-                        <p class="news-content" id="description">Loading...</p>
-                        <div class="btn-container">
-                            <a href="http://" id="btn">Read More</a>
-                            <br>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </section>
+      <nav class="nav-news">News</nav>
+      <main class="main-news">
+        <img src="../assets/news.png" alt="" class="news-img" />
+        <h1>Top news</h1>
+      </main>
+      <div id="root"></div>
+    </section>
     <script src="./news.js"></script>
-</body>
-
+  </body>
 </html>

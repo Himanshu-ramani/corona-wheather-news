@@ -11,6 +11,36 @@
     width: 100%;
     z-index: 0;
 } */
+
+
+.navigation-main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #F3F3F3;
+    height: 50px;
+    padding: 0 50px;
+}
+.navigation-main a{
+    text-decoration: none;
+    color: black;
+}
+.navigation-main ul{
+    display: flex;
+    list-style: none;
+}
+
+.navigation-main li{
+    padding:  10px;
+    /* border: 1px solid; */
+    /* height: 100%; */
+}
+.navigation-main li:hover ,.navigation-main a:hover{
+    background: lightskyblue;
+    color: #F3F3F3;
+}
+
+
 .header{
     background-image: url(../assets/bg.jpg);
     height: 100vh;
