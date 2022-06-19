@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* .overlay{
+    background-color: rgba(0, 0, 0, 0.315);
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    z-index: 0;
+} */
+
+
+.navigation-main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #F3F3F3;
+    height: 50px;
+    padding: 0 50px;
+}
+.navigation-main a{
+    text-decoration: none;
+    color: black;
+}
+.navigation-main ul{
+    display: flex;
+    list-style: none;
+}
+
+.navigation-main li{
+    padding:  10px;
+    /* border: 1px solid; */
+    /* height: 100%; */
+}
+.navigation-main li:hover ,.navigation-main a:hover{
+    background: lightskyblue;
+    color: #F3F3F3;
+}
+
+
+.header{
+    background-image: url(../assets/bg.jpg);
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    z-index: 1;
+}
+.input{
+    background: rgba(255, 255, 255, 0.288);
+    border-bottom-left-radius: 15px;
+    border-top-right-radius: 10px;
+    border: 2px solid rgba(0, 0, 0, 0.397);
+    font-size: 30px;
+    width: 300px;
+    margin-bottom: 30px;
+}
+.temperature{
+    margin-top: 40px;
+    font-size: 60px;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.712);
+}
+.condition{
+    margin-top: 10px;
+    font-size: 30px;
+    font-style: italic;
+}
+.range{
+    margin-top: 10px;
+    font-size: 25px;
+    font-style: italic;
+}
